@@ -7,7 +7,7 @@
     "start": "node src/app.js",
     "test": "jest",
     "migration:generate": "typeorm migration:generate",
-    "migration:run": "typeorm migration:run -d src/data-source.js"
+    "migration:run": "node ./node_modules/typeorm/cli.js migration:run -d src/data-source.js"
   },
   "dependencies": {
     "dotenv": "^16.4.0",
