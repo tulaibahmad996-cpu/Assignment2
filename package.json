@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node src/app.js",
     "test": "jest",
-    "migration:generate": "npx typeorm migration:generate --dataSource src/data-source.js",
-    "migration:run": "npx typeorm migration:run --dataSource src/data-source.js"
+    "migration:generate": "node ./node_modules/typeorm/cli.js migration:generate --dataSource src/data-source.js",
+    "migration:run": "node ./node_modules/typeorm/cli.js migration:run --dataSource src/data-source.js"
   },
   "dependencies": {
     "dotenv": "^16.4.0",
