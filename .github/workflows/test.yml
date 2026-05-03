@@ -38,7 +38,7 @@ jobs:
         run: npm install
 
       - name: Run migrations
-        run: npm run migration:run
+        run: npx typeorm migration:run -d src/data-source.js
         env:
           DATABASE_URL: postgres://postgres:123@localhost:5432/testdb
 
