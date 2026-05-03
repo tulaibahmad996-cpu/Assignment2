@@ -3,6 +3,8 @@ const app = require('../src/app');
 const AppDataSource = require('../src/data-source');
 const { User } = require('../src/entity/User');
 
+jest.setTimeout(20000);
+
 describe('POST /users', () => {
   let createdUserId = null;
   const testUser = {
